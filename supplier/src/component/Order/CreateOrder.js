@@ -9,7 +9,7 @@ export default function CreateOrder() {
     
     const [name, setName] = useState("");
     const [number, setNumber] = useState("");
-    const [oid, setOid] = useState("PID");
+    const [oid, setOid] = useState("PR");
     const [amount, setAmount] = useState("");
     const [quantity, setQuantity] = useState("");
     const [date, setDate] = useState("");
@@ -123,7 +123,8 @@ export default function CreateOrder() {
       <br></br>
 <div className="mb-3">
     <label for="exampleInputEmail1" className="form-label" id="createOrder">Customer Name</label>
-    <input type="text" className="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Enter Customer Name" pattern="[A-Za-z\s]+" title="Please enter only letters and spaces"
+    <input type="text" className="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Enter Customer Name" 
+    pattern="[A-Za-z\s]+" title="Please enter only letters and spaces"
     onChange={(e) =>{
 
     setName(e.target.value);
