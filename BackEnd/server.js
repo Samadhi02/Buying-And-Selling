@@ -26,7 +26,7 @@ const productRouter = require("./routes/products")
 /* Rashini Weerawardane (Customer Management) */
 const customerRouter = require("./routes/customers")
 
-/* Samadhi Jayasooriya (Transaction History) */
+/* Samadhi Jayasundara (Transaction History) */
 const historyRouter = require("./routes/history")
 
 /* Haritha Lidapitiya (Report Genaration) */
