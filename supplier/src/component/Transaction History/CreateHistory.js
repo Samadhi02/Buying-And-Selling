@@ -61,7 +61,7 @@ export default function CreateHistory() {
     useEffect(() => {
       axios.get("http://localhost:8070/products")
         .then((response) => {
-          setPnames(response.data.existingProduct.map((product) => product.name));
+          setPnames(response.data.existingProduct.map((product) => product.pid));
         })
         .catch((error) => {
           console.error("Error fetching supplier data:", error);
@@ -127,17 +127,17 @@ export default function CreateHistory() {
 </div>
 
 <div className="mb-3">
-            <label htmlFor="exampleInputPassword1" className="form-label" id="supplier">Product Name</label>
+            <label htmlFor="exampleInputPassword1" className="form-label" id="supplier">Product ID</label>
             <select
               className="form-control"
               onChange={(e) => setSelectedItem(e.target.value)}
               value={selectedItem}
               id="exampleInputPassword1"
             >
-              <option value="">Select Product Name</option>
-              {pnames.map((name) => (
-                <option key={name} value={name}>
-                  {name}
+              <option value="">Select Product ID</option>
+              {pnames.map((pid) => (
+                <option key={pid} value={pid}>
+                  {pid}
                 </option>
               ))}
             </select>
