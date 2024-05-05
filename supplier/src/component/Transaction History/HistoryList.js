@@ -148,7 +148,7 @@ export default class HistoryList extends Component {
                 display: true,
                 title: {
                   display: true,
-                  text: 'Product Name',
+                  text: 'Product ID',
                   color: "#333",
                   font: {
                     weight:1000,

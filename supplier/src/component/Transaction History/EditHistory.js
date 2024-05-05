@@ -145,10 +145,10 @@ export default function EditHistory(props) {
 </div>
 
 <div className="mb-3">
-    <label for="exampleInputPassword1" className="form-label" id='supplier'>Product Name</label>
-    <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Enter Product Name"
+    <label for="exampleInputPassword1" className="form-label" id='supplier'>Product ID</label>
+    <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Enter Product ID"
     value={pname}
-    pattern="[A-Za-z\s]+" title="Please enter only letters and spaces"
+    
 
     onChange={(e) =>{
 
